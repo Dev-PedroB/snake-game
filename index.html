@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Snake Game</h1>
+        <div id="instructions">
+            <p><strong>How to Play:</strong></p>
+            <ul>
+                <li>PC: Use the arrow keys to move the snake. Eat the yellow food to grow. Avoid hitting the walls or yourself!</li>
+                <li>Mobile: Use the on-screen arrow buttons to control the snake. Tap any arrow to start.</li>
+                <li>Press Restart to play again after a game over.</li>
+            </ul>
+        </div>
+        <div id="score">Score: 0</div>
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="gameOver" class="hidden">Game Over!<br><button id="restartBtn">Restart</button></div>
+        </div>
+        <div id="mobile-controls" class="hidden">
+            <div class="arrow-row">
+                <button class="arrow-btn" id="upBtn">&#8593;</button>
+            </div>
+            <div class="arrow-row">
+                <button class="arrow-btn" id="leftBtn">&#8592;</button>
+                <button class="arrow-btn" id="downBtn">&#8595;</button>
+                <button class="arrow-btn" id="rightBtn">&#8594;</button>
+            </div>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
